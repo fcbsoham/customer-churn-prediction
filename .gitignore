@@ -13,3 +13,5 @@ data/*.csv
 
 # Temporary files
 *.tmp
+
+data/*.csv
