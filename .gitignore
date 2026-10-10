@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.vscode/
+.streamlit/secrets.toml
+
+# Dataset
+data/*.csv
+
+# Python cache
+.pytest_cache/
+
+# Temporary files
+*.tmp

@@ -1,0 +1,24 @@
+CUSTOMER CHURN ANALYSIS REPORT
+========================================
+
+Dataset rows: 7043
+Training samples: 5634
+Testing samples: 1409
+Best model: Logistic Regression
+Accuracy: 0.7381
+ROC-AUC: 0.8413
+
+MODEL COMPARISON
+              Model  Accuracy  ROC-AUC
+Logistic Regression  0.738112 0.841298
+      Random Forest  0.762243 0.834553
+
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+    No Churn       0.90      0.72      0.80      1035
+       Churn       0.50      0.78      0.61       374
+
+    accuracy                           0.74      1409
+   macro avg       0.70      0.75      0.71      1409
+weighted avg       0.80      0.74      0.75      1409
