@@ -1,23 +1,37 @@
-CUSTOMER CHURN ANALYSIS REPORT
-========================================
+CUSTOMER CHURN MODEL EVALUATION
+=============================================
 
 Dataset rows: 7043
-Training samples: 5634
-Testing samples: 1409
-Best model: Logistic Regression
-Accuracy: 0.7381
-ROC-AUC: 0.8413
+Training samples: 4225
+Validation samples: 1409
+Test samples: 1409
+Cross-validation folds: 5
+Selected model: Logistic Regression
 
-MODEL COMPARISON
-              Model  Accuracy  ROC-AUC
-Logistic Regression  0.738112 0.841298
-      Random Forest  0.762243 0.834553
+CROSS-VALIDATION RESULTS
+              Model  CV ACCURACY Mean  CV ACCURACY Std  CV PRECISION Mean  CV PRECISION Std  CV RECALL Mean  CV RECALL Std  CV F1 Mean  CV F1 Std  CV ROC_AUC Mean  CV ROC_AUC Std
+Logistic Regression          0.752899         0.015546           0.522743          0.019795        0.804643       0.026960    0.633541   0.019514         0.847765        0.011744
+      Random Forest          0.773018         0.009390           0.556799          0.016191        0.715452       0.022911    0.625856   0.010876         0.839772        0.011050
+
+VALIDATION METRICS
+Accuracy: 0.7480
+Precision: 0.5166
+Recall: 0.7888
+F1-score: 0.6243
+ROC-AUC: 0.8362
+
+FINAL TEST METRICS
+Accuracy: 0.7395
+Precision: 0.5060
+Recall: 0.7834
+F1-score: 0.6149
+ROC-AUC: 0.8426
 
 CLASSIFICATION REPORT
               precision    recall  f1-score   support
 
     No Churn       0.90      0.72      0.80      1035
-       Churn       0.50      0.78      0.61       374
+       Churn       0.51      0.78      0.61       374
 
     accuracy                           0.74      1409
    macro avg       0.70      0.75      0.71      1409
